@@ -1,0 +1,4 @@
+com/limerse/slider/databinding/ItemCarouselBinding.java
+ com.limerse.slider.databinding.ItemCarouselBinding
+com/limerse/slider/BuildConfig.java
+ com.limerse.slider.BuildConfig

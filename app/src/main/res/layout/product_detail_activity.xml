@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProductDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300adp"
+            tools:ignore="MissingConstraints">
+
+            <com.limerse.slider.ImageCarousel
+                android:id="@+id/carousel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:autoPlay="true"
+                app:autoPlayDelay="4000"
+                app:carouselGravity="CENTER"
+                app:carouselType="SHOWCASE"
+                app:imageScaleType="matrix"
+                app:scaleOnScroll="true"
+                app:scalingFactor=".25"
+                app:showBottomShadow="true"
+                app:showCaption="false"
+                app:showIndicator="true"
+                app:showNavigationButtons="true"
+                app:showTopShadow="false" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_5adp">
+
+            <TextView
+                android:id="@+id/txtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5adp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15asp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5adp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_10asp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

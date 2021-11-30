@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <string name="app_name">Why Not! Image Carousel!</string>
+    <declare-styleable name="ImageCarousel">
+        <attr format="boolean" name="showTopShadow"/>
+        <attr format="float" name="topShadowAlpha"/>
+        <attr format="dimension" name="topShadowHeight"/>
+
+        <attr format="boolean" name="showBottomShadow"/>
+        <attr format="float" name="bottomShadowAlpha"/>
+        <attr format="dimension" name="bottomShadowHeight"/>
+
+        <attr format="boolean" name="showCaption"/>
+        <attr format="dimension" name="captionMargin"/>
+        <attr format="dimension" name="captionTextSize"/>
+
+        <attr format="boolean" name="showIndicator"/>
+        <attr format="dimension" name="indicatorMargin"/>
+
+        <attr format="enum" name="imageScaleType">
+            <enum name="matrix" value="0"/>
+            <enum name="fitXY" value="1"/>
+            <enum name="fitStart" value="2"/>
+            <enum name="fitCenter" value="3"/>
+            <enum name="fitEnd" value="4"/>
+            <enum name="center" value="5"/>
+            <enum name="centerCrop" value="6"/>
+            <enum name="centerInside" value="7"/>
+        </attr>
+
+        <attr format="reference|color" name="carouselBackground"/>
+        <attr format="reference|color" name="imagePlaceholder"/>
+
+        <attr format="dimension" name="carouselPadding"/>
+        <attr format="dimension" name="carouselPaddingStart"/>
+        <attr format="dimension" name="carouselPaddingTop"/>
+        <attr format="dimension" name="carouselPaddingEnd"/>
+        <attr format="dimension" name="carouselPaddingBottom"/>
+
+        <attr format="boolean" name="showNavigationButtons"/>
+        <attr format="reference" name="previousButtonLayout"/>
+        <attr format="reference" name="previousButtonId"/>
+        <attr format="dimension" name="previousButtonMargin"/>
+        <attr format="reference" name="nextButtonLayout"/>
+        <attr format="reference" name="nextButtonId"/>
+        <attr format="dimension" name="nextButtonMargin"/>
+
+        <attr format="enum" name="carouselType">
+            <enum name="BLOCK" value="0"/>
+            <enum name="SHOWCASE" value="1"/>
+        </attr>
+
+        <attr format="enum" name="carouselGravity">
+            <enum name="START" value="0"/>
+            <enum name="CENTER" value="1"/>
+        </attr>
+
+        <attr format="boolean" name="scaleOnScroll"/>
+        <attr format="float" name="scalingFactor"/>
+        <attr format="boolean" name="autoWidthFixing"/>
+        <attr format="boolean" name="autoPlay"/>
+        <attr format="integer" name="autoPlayDelay"/>
+        <attr format="boolean" name="infiniteCarousel"/>
+        <attr format="boolean" name="touchToPause"/>
+    </declare-styleable>
+</resources>

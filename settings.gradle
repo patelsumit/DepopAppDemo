@@ -1,0 +1,3 @@
+rootProject.name = "DepopApp"
+include ':app'
+include ':slider'
